@@ -1,5 +1,5 @@
 ---
-title: "Example-Based Data Analysis"
+title: "Example-Based Data Analysis --- A New Text"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
@@ -14,22 +14,24 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+## A New Text -- Building on "Data Analysis and Graphics Using R"
 
-This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+The third edition of _Data Analysis and Graphics Using R_ appeared
+in 2010. Quite a bit has changed since then.  One big change is that
+there is now extensive online tutorial material.  It is thus now 
+appropriate to place the emphasis on R-based data analysis and
+associated graphics, expecting that readers will look elsewhere
+for R tutorial content, some of which we plan to make available
+on this site.  We plan to provide more detail in the months to come.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+## New Text vs "Data Analysis and Graphics Using R"
 
-```{r cars}
-summary(cars)
-```
+* Chapters 1--5 are now split between the new Chapters 1 and 2.
+    * The section "A critique of p-value methodology" has been added.  
+    * Bayes factors now get attention, used for the light that they shed on p-values.
+    * There is extensive commentary on how issues with p-values play into the 
+    reproducibility "crisis" in laboratory science. 
+    * The discussion of multiple comparisons has been extended somewhat, with attention given to the "false detection rate", and to the use of the Benjamini-Hochberg approach when there are many p-values. (This is further taken up in Section 9.3 on RNA-Seq gene expression.  
+* Chapter 3 has more extended commentary on the use of population-based data for inference.
 
-## Including Plots
-
-You can also embed plots, for example:
-
-```{r pressure, echo=FALSE}
-plot(pressure)
-```
-
-Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+More to come . . .

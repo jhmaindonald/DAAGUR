@@ -1,5 +1,5 @@
 ---
-title: "Example-Based Data Analysis --- A New Text"
+title: "A Practical Guide to Data Analysis Using R --- A New Text"
 knit: (function(input_file, encoding) {
   out_dir <- 'docs';
   rmarkdown::render(input_file,
@@ -14,17 +14,24 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## For more details, go to the PGRcode repository
+This repository now serves mainly to redirect to https://jhmaindonald.github.io/PGRcode, 
+which has code and other supplementary content that relates to the new text "A Practical 
+Guide to Data Analysis Using R -- An Example-Based Approach", by John H Maindonald, 
+W John Braun, and Jeffrey L Andrews. The new text is currently making its way through the 
+Cambridge University Press copy-editing process, and is due for publication in May 2024.
+
+## Extensive R language tutorial content is now available online
+
+The third edition of _Data Analysis and Graphics Using R_ appeared in 2010. 
+In view of the extensive R language tutorial content is now available online
+it has now been judged appropriate to place the emphasis on R-based data 
+analysis and associated graphics, and direct readers elsewhere for detailed
+R language tutorial content. Some limited R tutorial content, together with 
+R code from the text, is available from https://jhmaindonald.github.io/PGRcode,
+with more to be added in due course
+
 ## A New Text -- Building on "Data Analysis and Graphics Using R"
-
-The third edition of _Data Analysis and Graphics Using R_ appeared
-in 2010. Quite a bit has changed since then.  One big change is that
-there is now extensive online tutorial material.  It is thus now 
-appropriate to place the emphasis on R-based data analysis and
-associated graphics, expecting that readers will look elsewhere
-for R tutorial content, some of which we plan to make available
-on this site.  We plan to provide more detail in the months to come.
-
-## New Text vs "Data Analysis and Graphics Using R"
 
 * Chapters 1--5 are now split between the new Chapters 1 and 2.
     * The section "A critique of p-value methodology" has been added.  

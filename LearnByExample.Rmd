@@ -6,7 +6,7 @@ knit: (function(input_file, encoding) {
  encoding=encoding,
  output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
 author: "John Maindonald"
-date: "03/11/2023"
+date: "05/11/2023"
 output: html_document
 ---
 
@@ -15,13 +15,15 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## For more details, go to the PGRcode repository
-This repository now serves mainly to redirect to https://jhmaindonald.github.io/PGRcode, 
-which has code and other supplementary content that relates to the new text "A Practical 
+This repository now serves mainly to redirect to https://jhmaindonald.github.io/PGRcode.  Look there for code and other content that relates to the new text "A Practical 
 Guide to Data Analysis Using R -- An Example-Based Approach", by John H Maindonald, 
 W John Braun, and Jeffrey L Andrews. The new text is currently making its way through the 
-Cambridge University Press copy-editing process, and is due for publication in May 2024.
+Cambridge University Press copy-editing process, with May 2024 as the target date for
+publication.
 
-## Extensive R language tutorial content is now available online
+## Changes and Updates from "Data Analysis and Graphics Using R"
+
+### R language tutorial content
 
 The third edition of _Data Analysis and Graphics Using R_ appeared in 2010. 
 In view of the extensive R language tutorial content is now available online
@@ -29,16 +31,23 @@ it has now been judged appropriate to place the emphasis on R-based data
 analysis and associated graphics, and direct readers elsewhere for detailed
 R language tutorial content. Some limited R tutorial content, together with 
 R code from the text, is available from https://jhmaindonald.github.io/PGRcode,
-with more to be added in due course
+with more to be added in due course.
 
-## A New Text -- Building on "Data Analysis and Graphics Using R"
+### Data Analysis methodology -- Changes in emphasis, and new content 
 
-* Chapters 1--5 are now split between the new Chapters 1 and 2.
-    * The section "A critique of p-value methodology" has been added.  
-    * Bayes factors now get attention, used for the light that they shed on p-values.
+* Chapters 1--5 from the older text are now split between the new Chapters 1 and 2,
+and the appendix.
+    * A section "A critique of $p$-value methodology" has been added.  
+    * Bayes factors now get attention, used for the light that they shed on $p$-values.
     * There is extensive commentary on how issues with p-values play into the 
     reproducibility "crisis" in laboratory science. 
     * The discussion of multiple comparisons has been extended somewhat, with attention given to the "false detection rate", and to the use of the Benjamini-Hochberg approach when there are many p-values. (This is further taken up in Section 9.3 on RNA-Seq gene expression.  
 * Chapter 3 has more extended commentary on the use of population-based data for inference.
+* Chapter 4 now uses the abilities of the _qgam_ package, to demonstrate smooth additive
+quantile regression with, under independence assumptions, automatic selection of 
+smoothing parameters.
+* Chapter 5 and Chapter 7 look in more detail at models for extra-binomial and 
+extra-poisson variation.
+* Chapter 6 now looks at time series with seasonal effects.
+* Chapter 9 now has a section on cluster analysis and dendrogram construction.
 
-More to come . . .
